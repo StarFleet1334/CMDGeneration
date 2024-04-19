@@ -38,5 +38,10 @@ public class Run {
             int index = scanner.nextInt();
             CLASS_CREATOR.createJavaClass(DirectoryLister.getDirectories().get(index));
         }
+        if (number == 3) {
+            System.out.println("Provide Index of directory: ");
+            int index = scanner.nextInt();
+            ENUM_CREATOR.creatEnum(DirectoryLister.getDirectories().get(index));
+        }
     }
 }
