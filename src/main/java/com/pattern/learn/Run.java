@@ -4,10 +4,6 @@ import com.pattern.learn.class_creation.ClassCreator;
 import com.pattern.learn.enum_creation.EnumCreator;
 import com.pattern.learn.interface_creation.InterfaceCreator;
 import com.pattern.learn.utility.DirectoryLister;
-import com.pattern.learn.utility.Utility;
-
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class Run {
@@ -42,6 +38,12 @@ public class Run {
             System.out.println("Provide Index of directory: ");
             int index = scanner.nextInt();
             ENUM_CREATOR.creatEnum(DirectoryLister.getDirectories().get(index));
+        }
+
+        if (number == 2) {
+            System.out.println("Provide Index of directory: ");
+            int index = scanner.nextInt();
+            INTERFACE_CREATOR.createInterface(DirectoryLister.getDirectories().get(index));
         }
     }
 }

@@ -1,6 +1,10 @@
 package com.pattern.learn;
 
-public enum Random {
+public interface Random {
+
+    int x = 0;
+
+     void add();
 
 
 
